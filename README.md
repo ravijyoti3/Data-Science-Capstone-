@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# Data-Science-Capstone-
+>>>>>>> 82387f881a34f7af6d41ef6684d806f897ab546c
 [//]: # (Image References)
 
 [image1]: ./images/sample_dog_output.png "Sample Output"
@@ -13,6 +17,10 @@ Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree!
 
 Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82387f881a34f7af6d41ef6684d806f897ab546c
 ## Project Instructions
 
 ### Instructions
@@ -29,6 +37,7 @@ cd dog-project
 
 4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 
+<<<<<<< HEAD
 5. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
 
 6. (Optional) **If you are running the project on your local machine (and not using AWS)**, create (and activate) a new environment.
@@ -78,6 +87,37 @@ sudo python3 -m pip install -r requirements/requirements-gpu.txt
 ```
 	
 9. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
+=======
+5. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```
+	conda create --name dog-project python=3.6
+	source activate dog-project
+	```  
+	- __Windows__: 
+	```
+	conda create --name dog-project python=3.6
+	activate dog-project
+	```
+
+6. Install a few pip packages.
+```
+pip install -r requirements.txt
+```
+
+7. Install TensorFlow. 
+	- Option 1: __To install TensorFlow with GPU support__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step and only need to install the `tensorflow-gpu` package:
+		```
+		pip install tensorflow-gpu==1.1.0
+		```
+	- Option 2: __To install TensorFlow with CPU support only__ on a local machine:
+		```
+		pip install tensorflow==1.1.0
+		```
+
+8. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
+>>>>>>> 82387f881a34f7af6d41ef6684d806f897ab546c
 	- __Linux__ or __Mac__: 
 		```
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
@@ -88,6 +128,7 @@ sudo python3 -m pip install -r requirements/requirements-gpu.txt
 		python -c "from keras import backend"
 		```
 
+<<<<<<< HEAD
 10. (Optional) **If you are running the project on your local machine (and not using AWS)**, create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment. 
 ```
 python -m ipykernel install --user --name dog-project --display-name "dog-project"
@@ -114,3 +155,14 @@ When you are ready to submit your project, collect the following files and compr
 - Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
 
 Alternatively, your submission could consist of the GitHub link to your repository.
+=======
+9. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment.  Open the notebook.
+```
+python -m ipykernel install --user --name dog-project --display-name "dog-project"
+jupyter notebook dog_app.ipynb
+```
+
+10. Before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
+
+__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
+>>>>>>> 82387f881a34f7af6d41ef6684d806f897ab546c
